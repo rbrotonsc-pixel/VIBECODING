@@ -89,8 +89,8 @@ Valen para todas las fases. Si alguna cambia, se actualiza aquí primero.
 **Objetivo:** un módulo puro que, dado un tablero y un color, elige columna. No toca la interfaz.
 
 **Tareas:**
-- [ ] `src/ordenador.js`: si puede ganar en esta jugada, gana; si no, bloquea la victoria inmediata del rival; si no, la columna libre más central según el orden de desempate acordado.
-- [ ] Nunca devuelve una columna llena. Si el tablero está lleno o la partida ha terminado, no devuelve jugada.
+- [x] `src/ordenador.js`: si puede ganar en esta jugada, gana; si no, bloquea la victoria inmediata del rival; si no, la columna libre más central según el orden de desempate acordado.
+- [x] Nunca devuelve una columna llena. Si el tablero está lleno o la partida ha terminado, no devuelve jugada.
 
 **Pruebas (Vitest):**
 - Con el tablero vacío elige la columna 4 (índice 3).
