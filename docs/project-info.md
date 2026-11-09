@@ -7,7 +7,7 @@ Un cuatro en raya que se juega en el navegador, en un tablero de 7 columnas × 6
 Personas que quieren echar una partida rápida, solas contra el ordenador o con alguien al lado, sin instalar nada ni crear cuenta.
 
 ## Funciones
-- Elegir el modo al empezar: **2 jugadores** (se turnan en el mismo equipo) o **contra el ordenador**.
+- Elegir el modo con un selector siempre visible: **2 jugadores** (se turnan en el mismo equipo) o **contra el ordenador**. Cambiar de modo empieza una partida nueva.
 - Tablero fijo de 7 × 6. Se pulsa una columna y la ficha cae a la casilla libre más baja.
 - Turnos alternos entre rojo y amarillo; empieza siempre rojo. Se indica de quién es el turno.
 - No se puede jugar en una columna llena.
