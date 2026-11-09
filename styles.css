@@ -1,0 +1,76 @@
+:root {
+  --fondo: #f4f1ea;
+  --texto: #1d1d1f;
+  --tablero: #1f4fa8;
+  --hueco: #f4f1ea;
+  --boton: #e2ddd0;
+  --boton-hover: #d2ccbc;
+  --tam: min(12vw, 64px);
+  --sep: calc(var(--tam) / 8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.columnas,
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(7, var(--tam));
+  gap: var(--sep);
+  padding: 0 var(--sep);
+}
+
+.columnas button {
+  height: calc(var(--tam) / 2);
+  border: none;
+  border-radius: 6px;
+  background: var(--boton);
+  color: var(--texto);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.columnas button:hover,
+.columnas button:focus-visible {
+  background: var(--boton-hover);
+}
+
+.tablero {
+  padding: var(--sep);
+  background: var(--tablero);
+  border-radius: 12px;
+}
+
+.casilla {
+  width: var(--tam);
+  height: var(--tam);
+  border-radius: 50%;
+  background: var(--hueco);
+}

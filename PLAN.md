@@ -22,14 +22,14 @@ Valen para todas las fases. Si alguna cambia, se actualiza aquí primero.
 **Objetivo:** la versión más pequeña posible: una página que se abre, muestra el nombre y un tablero vacío de 7 × 6, y con Playwright y el linter listos. Todavía no se puede jugar.
 
 **Tareas:**
-- [ ] Limpiar los restos de la plantilla: quitar `GEMINI_API_KEY` de `.env.example` (la app no usa claves) y las entradas que no apliquen de `.gitignore` (Streamlit, Python), preguntando antes de borrar.
-- [ ] Crear `index.html`, `styles.css` y un módulo JS de arranque.
-- [ ] Mostrar el título «Cuatro en raya» y una cuadrícula vacía de 7 columnas × 6 filas con los `data-testid` acordados.
-- [ ] Preparar `package.json` con la versión de Node fijada (`engines`) y los scripts `test` (Vitest, a partir de la fase 1), `test:e2e` (Playwright) y `lint` (ESLint).
-- [ ] Instalar Playwright (avisando antes) **solo con Chromium**.
-- [ ] Configurar Playwright para que arranque y pare solo el servidor estático (`python3 -m http.server`) al ejecutar las pruebas.
-- [ ] Instalar ESLint (avisando antes) con una configuración mínima para módulos ES en el navegador.
-- [ ] Comprobar que `.gitignore` cubre `node_modules`, `test-results` y `playwright-report`.
+- [x] Limpiar los restos de la plantilla: quitar `GEMINI_API_KEY` de `.env.example` (la app no usa claves) y las entradas que no apliquen de `.gitignore` (Streamlit, Python), preguntando antes de borrar.
+- [x] Crear `index.html`, `styles.css` y un módulo JS de arranque.
+- [x] Mostrar el título «Cuatro en raya» y una cuadrícula vacía de 7 columnas × 6 filas con los `data-testid` acordados.
+- [x] Preparar `package.json` con la versión de Node fijada (`engines`) y los scripts `test` (Vitest, a partir de la fase 1), `test:e2e` (Playwright) y `lint` (ESLint).
+- [x] Instalar Playwright (avisando antes) **solo con Chromium**.
+- [x] Configurar Playwright para que arranque y pare solo el servidor estático (`python3 -m http.server`) al ejecutar las pruebas.
+- [x] Instalar ESLint (avisando antes) con una configuración mínima para módulos ES en el navegador.
+- [x] Comprobar que `.gitignore` cubre `node_modules`, `test-results` y `playwright-report`.
 
 **Pruebas:**
 - Playwright (`e2e/`): la página carga, se ve «Cuatro en raya» y hay 42 casillas vacías.
