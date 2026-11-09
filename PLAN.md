@@ -43,6 +43,8 @@ Valen para todas las fases. Si alguna cambia, se actualiza aquí primero.
 
 **Objetivo:** dos personas pueden ir poniendo fichas por turnos. Aún no se detecta quién gana.
 
+**Restricción:** sin base de datos ni almacenamiento de ningún tipo (tampoco `localStorage` ni archivos). El estado de la partida vive solo en memoria y se pierde al recargar la página.
+
 **Tareas:**
 - [ ] Instalar Vitest (avisando antes) y configurarlo para que **excluya `e2e/`**, de modo que no intente ejecutar las pruebas de Playwright.
 - [ ] `src/juego.js` (sin interfaz): crear tablero, soltar ficha en una columna, cambiar de turno, saber si una columna está llena. Debe aceptar un tablero inicial dado, para poder montar situaciones en las pruebas.
