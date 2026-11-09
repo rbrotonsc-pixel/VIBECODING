@@ -66,11 +66,11 @@ Valen para todas las fases. Si alguna cambia, se actualiza aquí primero.
 **Objetivo:** una partida completa entre dos personas, con ganador o empate y opción de jugar otra.
 
 **Tareas:**
-- [ ] Lógica: detectar 4 en raya en horizontal, vertical y las dos diagonales, devolviendo las 4 casillas ganadoras.
-- [ ] Lógica: detectar empate con el tablero lleno y sin ganador. La victoria se comprueba **antes** que el empate.
-- [ ] Construir y guardar como dato de prueba una secuencia de 42 jugadas que termina en empate, comprobada a mano y con la propia lógica.
-- [ ] Interfaz: mostrar «Gana rojo», «Gana amarillo» o «Empate», resaltar las 4 fichas ganadoras y bloquear el tablero.
-- [ ] Botón **Nueva partida** que vacía el tablero y deja el turno en rojo.
+- [x] Lógica: detectar 4 en raya en horizontal, vertical y las dos diagonales, devolviendo las 4 casillas ganadoras.
+- [x] Lógica: detectar empate con el tablero lleno y sin ganador. La victoria se comprueba **antes** que el empate.
+- [x] Construir y guardar como dato de prueba una secuencia de 42 jugadas que termina en empate, comprobada a mano y con la propia lógica.
+- [x] Interfaz: mostrar «Gana rojo», «Gana amarillo» o «Empate», resaltar las 4 fichas ganadoras y bloquear el tablero.
+- [x] Botón **Nueva partida** que vacía el tablero y deja el turno en rojo.
 
 **Pruebas:**
 - Vitest: victoria en cada una de las 4 direcciones, incluidas líneas pegadas a los bordes y esquinas; 3 en raya no gana; 5 en línea gana.
