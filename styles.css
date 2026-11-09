@@ -5,6 +5,9 @@
   --hueco: #f4f1ea;
   --boton: #e2ddd0;
   --boton-hover: #d2ccbc;
+  --rojo: #d62828;
+  --amarillo: #f6c90e;
+  --amarillo-texto: #a67c00;
   --tam: min(12vw, 64px);
   --sep: calc(var(--tam) / 8);
 }
@@ -73,4 +76,27 @@ h1 {
   height: var(--tam);
   border-radius: 50%;
   background: var(--hueco);
+  cursor: pointer;
+}
+
+.casilla[data-color="rojo"] {
+  background: var(--rojo);
+}
+
+.casilla[data-color="amarillo"] {
+  background: var(--amarillo);
+}
+
+.estado {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.estado[data-turno="rojo"] {
+  color: var(--rojo);
+}
+
+.estado[data-turno="amarillo"] {
+  color: var(--amarillo-texto);
 }

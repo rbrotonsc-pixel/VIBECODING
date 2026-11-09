@@ -46,11 +46,11 @@ Valen para todas las fases. Si alguna cambia, se actualiza aquí primero.
 **Restricción:** sin base de datos ni almacenamiento de ningún tipo (tampoco `localStorage` ni archivos). El estado de la partida vive solo en memoria y se pierde al recargar la página.
 
 **Tareas:**
-- [ ] Instalar Vitest (avisando antes) y configurarlo para que **excluya `e2e/`**, de modo que no intente ejecutar las pruebas de Playwright.
-- [ ] `src/juego.js` (sin interfaz): crear tablero, soltar ficha en una columna, cambiar de turno, saber si una columna está llena. Debe aceptar un tablero inicial dado, para poder montar situaciones en las pruebas.
-- [ ] Al pulsar una columna (botón o casilla), la ficha cae a la casilla libre más baja.
-- [ ] Turnos alternos; empieza rojo. Un texto (`data-testid="estado"`) indica de quién es el turno.
-- [ ] Pulsar una columna llena no hace nada.
+- [x] Instalar Vitest (avisando antes) y configurarlo para que **excluya `e2e/`**, de modo que no intente ejecutar las pruebas de Playwright.
+- [x] `src/juego.js` (sin interfaz): crear tablero, soltar ficha en una columna, cambiar de turno, saber si una columna está llena. Debe aceptar un tablero inicial dado, para poder montar situaciones en las pruebas.
+- [x] Al pulsar una columna (botón o casilla), la ficha cae a la casilla libre más baja.
+- [x] Turnos alternos; empieza rojo. Un texto (`data-testid="estado"`) indica de quién es el turno.
+- [x] Pulsar una columna llena no hace nada.
 
 **Pruebas:**
 - Vitest: la ficha cae a la fila 0, se apila, los turnos alternan, una columna llena rechaza la jugada sin cambiar turno ni tablero, y una columna fuera de rango (−1, 7) se rechaza.
